@@ -22,33 +22,15 @@ export default function SampleDrawer() {
         <DrawerBackdrop />
         <DrawerTrigger asChild>
           <Button variant="outline" size="sm">
-            Open Drawer
+            Open Drawer (When it has many options)
           </Button>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
-            <DrawerTitle>Drawer Title</DrawerTitle>
+            <DrawerTitle>When it has many options</DrawerTitle>
           </DrawerHeader>
           <DrawerBody>
                 <Flex gap="4" direction="column">
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
-                <SampleSelect />
                 <SampleSelect />
                 <SampleSelect />
                 <SampleSelect />

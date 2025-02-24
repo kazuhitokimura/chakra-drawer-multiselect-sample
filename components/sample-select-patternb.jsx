@@ -11,7 +11,7 @@ import { SelectContent,
 export default function SampleSelectPatternB() {
   return (
     <SelectRoot multiple collection={frameworks} size="sm" width="100%">
-      <SelectLabel>Select framework</SelectLabel>
+      <SelectLabel>Select options</SelectLabel>
       <SelectTrigger>
         <SelectValueText placeholder="" />
       </SelectTrigger>
