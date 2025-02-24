@@ -1,11 +1,12 @@
 "use client"
 
-import { createListCollection, SelectContent,
+import { createListCollection } from "@chakra-ui/react";
+import { SelectContent,
     SelectItem,
     SelectLabel,
     SelectRoot,
     SelectTrigger,
-    SelectValueText, } from "@chakra-ui/react"
+    SelectValueText, } from "./ui/select"
 
 export default function SampleSelect() {
   return (
@@ -14,7 +15,7 @@ export default function SampleSelect() {
       <SelectTrigger>
         <SelectValueText placeholder="" />
       </SelectTrigger>
-      <SelectContent>
+      <SelectContent zIndex={999999}>
         {frameworks.items.map((movie) => (
           <SelectItem item={movie} key={movie.value}>
             {movie.label}

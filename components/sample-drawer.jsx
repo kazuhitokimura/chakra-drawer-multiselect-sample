@@ -1,3 +1,5 @@
+"use client"
+
 import { Button, Flex } from "@chakra-ui/react";
 import {
   DrawerActionTrigger,
@@ -11,9 +13,9 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "./ui/drawer";
-import SampleSelect from "./sample-select";
+import * as React from 'react'
 
-export default function SampleDrawer() {
+export default function SampleDrawer({ children }) {
   return (
       <DrawerRoot size="md">
         <DrawerBackdrop />
@@ -27,68 +29,9 @@ export default function SampleDrawer() {
             <DrawerTitle>Drawer Title</DrawerTitle>
           </DrawerHeader>
           <DrawerBody>
-            <Flex gap="4" direction="column">
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            <SampleSelect />
-            </Flex>
+                <Flex gap="4" direction="column">
+                    {children}
+                </Flex>
           </DrawerBody>
           <DrawerFooter>
             <DrawerActionTrigger asChild>
