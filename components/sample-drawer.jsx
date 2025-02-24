@@ -13,9 +13,10 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "./ui/drawer";
+import SampleSelect from "./sample-select";
 import * as React from 'react'
 
-export default function SampleDrawer({ children }) {
+export default function SampleDrawer() {
   return (
       <DrawerRoot size="md">
         <DrawerBackdrop />
@@ -30,7 +31,36 @@ export default function SampleDrawer({ children }) {
           </DrawerHeader>
           <DrawerBody>
                 <Flex gap="4" direction="column">
-                    {children}
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
+                <SampleSelect />
                 </Flex>
           </DrawerBody>
           <DrawerFooter>
