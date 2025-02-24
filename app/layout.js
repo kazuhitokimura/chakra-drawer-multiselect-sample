@@ -1,4 +1,5 @@
 import { Provider } from "../components/ui/provider.jsx";
+import { Center } from "@chakra-ui/react";
 
 export const metadata = {
   title: "Create Next App",
@@ -9,7 +10,11 @@ export default function RootLayout({ children }) {
   return (
     <html suppressHydrationWarning>
       <body>
-        <Provider>{children}</Provider>
+        <Provider>
+          <Center w="100vw" h="100vh">
+            {children}
+          </Center>
+        </Provider>
       </body>
     </html>
   );

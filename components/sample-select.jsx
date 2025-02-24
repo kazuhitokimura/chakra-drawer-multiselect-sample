@@ -7,12 +7,12 @@ import { createListCollection, SelectContent,
     SelectTrigger,
     SelectValueText, } from "@chakra-ui/react"
 
-const SampleSelect = () => {
+export default function SampleSelect() {
   return (
-    <SelectRoot multiple collection={frameworks} size="sm" width="320px">
+    <SelectRoot multiple collection={frameworks} size="sm" width="100%">
       <SelectLabel>Select framework</SelectLabel>
       <SelectTrigger>
-        <SelectValueText placeholder="Movie" />
+        <SelectValueText placeholder="" />
       </SelectTrigger>
       <SelectContent>
         {frameworks.items.map((movie) => (
@@ -50,7 +50,6 @@ const frameworks = createListCollection({
     { label: "NestJS", value: "nestjs" },
     { label: "Feathers", value: "feathers" },
     { label: "AdonisJS", value: "adonis" },
-    { label: "Strapi", value: "strapi" },
     { label: "KeystoneJS", value: "keystone" },
     { label: "Ghost", value: "ghost" },
     { label: "Directus", value: "directus" },
@@ -61,8 +60,5 @@ const frameworks = createListCollection({
     { label: "Contentful", value: "contentful" },
     { label: "Storyblok", value: "storyblok" },
     { label: "Strapi", value: "strapi" },
-    { label: "KeystoneJS", value: "keystone" },
-    { label: "Ghost", value: "ghost" },
-    { label: "Directus", value: "directus" },
   ],
 })
