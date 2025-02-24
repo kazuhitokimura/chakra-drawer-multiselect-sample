@@ -1,43 +1,12 @@
+import { Flex } from "@chakra-ui/react";
 import SampleDrawer from "../components/sample-drawer";
-import SampleSelect from "../components/sample-select";
-import SampleSelectPlanB from "../components/sample-select-planb";
+import SampleDrawerPatternB from "../components/sample-drawer-patternb";
 
 export default function Home() {
   return (
-    <div>
+    <Flex gap="4" direction="column">
       <SampleDrawer />
-      {/*<SampleDrawer>
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-        <SampleSelectPlanB />
-      </SampleDrawer> */}
-    </div>
+      <SampleDrawerPatternB />
+    </Flex>
   );
 }
