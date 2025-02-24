@@ -12,7 +12,7 @@ export default function SampleSelect() {
   return (
     <SelectRoot multiple collection={frameworks} size="sm" width="100%">
       <SelectLabel>Select options</SelectLabel>
-      <SelectTrigger>
+      <SelectTrigger clearable>
         <SelectValueText placeholder="" />
       </SelectTrigger>
       <SelectContent zIndex={999999}>
